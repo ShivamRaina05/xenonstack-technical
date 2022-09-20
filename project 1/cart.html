@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - CLASSI-X</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="D:\project 1\logo.jpg" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="D:\project 1\cart.png" width="30px" height="30px">
+            <img src="D:\project 1\menu3.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!--.......cart item details..............-->
+    <div class="small-continer">
+        <table>
+            <tr>
+                <th>product</th>
+                <th>quantity</th>
+                <th>subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="D:\project 1\categories\yl\cat14.jpg">
+                        <div>
+                            <p>Oversized t-shirt</p>
+                            <small>Price: ₹1780.80</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹1780.80</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="D:\project 1\categories\yl\cat12.jpg">
+                        <div>
+                            <p>Oversized t-shirt</p>
+                            <small>Price: ₹1780.80</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹1780.80</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="D:\project 1\categories\yl\cat13.jpg">
+                        <div>
+                            <p>Oversized t-shirt</p>
+                            <small>Price: ₹1780.80</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹1780.80</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>₹5,342.40</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>₹322.40</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>₹5,664.80</td>
+                </tr>    
+            </table>
+        </div>
+
+
+    </div>
+
+<!--.................footer..............-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download App</h3>
+                <p>Download App for Android / IOS.</p>
+                <div class="app-logo">
+                    <img src="D:\project 1\play-store.png">
+                    <img src="D:\project 1\app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="D:\project 1\logo.jpg" alt="">
+                <p>Designed not to maintain, but to increase your class.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li>contact us</li>
+                    <li>privacy policy</li>
+                    <li>terms and conditions</li>
+                    <li>refund policy</li>
+
+                </ul>
+            </div> 
+            <div class="footer-col-4">
+                <h3>Follow Us On</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">CLASSI-X</p>
+    </div>
+</div>
+
+
+
+<!--..............js for toggle menu.................-->
+<scripts>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px"
+
+        }
+    }
+</scripts>
+
+
+</body>
+</html>

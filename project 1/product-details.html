@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - CLASSI-X</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="D:\project 1\logo.jpg" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="D:\project 1\cart.png" width="30px" height="30px">
+            <img src="D:\project 1\menu3.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div> 
+    
+    <!--..............single procuct details...........-->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="D:\project 1\categories\bm\cat3.jpg" width="25%" id="productImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="D:\project 1\categories\bm\cat3.jpg" width="25%" class="small-img">
+                        <img src="D:\project 1\categories\bm\cat32.jpg" width="25%" class="small-img">
+                        <img src="D:\project 1\categories\bm\cat33.jpg" width="25%" class="small-img">
+                    </div>
+                </div>  
+
+
+            </div>
+            <div class="col-2">
+                <p>Home / suit-jacket</p>
+                <h4>grey formal suit jacket by BooHooMAN</h4>
+                <h6>₹3,554.48</h6>
+                <select>
+                    <option>select size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>L</option>
+                    <option>M</option>
+                    <option>S</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add to cart</a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+<div class="small-container">
+    
+        <div class="row">
+            <div class="col-4">
+                <img src="D:\project 1\categories\bm\cat3.jpg">
+                <h4>BooHooMAN GREY FORMAL SUIT JACKET</h4>
+                <p>₹3,554.48</p>
+            </div>
+            <div class="col-4">
+                <img src="D:\project 1\categories\bm\cat4.jpg">
+                <h4>BooHooMAN SKY-BLUE FORMAL SUIT JACKET</h4>
+                <p>₹3,889.87</p>
+            </div>
+            <div class="col-4">
+                <img src="D:\project 1\categories\bm\cat5.jpg">
+                <h4>BooHooMAN GREY CHECKED FORMAL TROUSERS</h4>
+                <p>₹2,369.96</p>
+            </div>    
+            <div class="col-4">
+                <img src="D:\project 1\categories\bm\cat6.jpg">
+                <h4>BooHooMAN GREY FORMAL SUIT JACKET</h4>
+                <p>₹3,554.48</p>
+            </div>
+    
+        </div>
+        
+        
+</div>
+
+
+<!--.................footer..............-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download App</h3>
+                <p>Download App for Android / IOS.</p>
+                <div class="app-logo">
+                    <img src="D:\project 1\play-store.png">
+                    <img src="D:\project 1\app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="D:\project 1\logo.jpg" alt="">
+                <p>Designed not to maintain, but to increase your class.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li>contact us</li>
+                    <li>privacy policy</li>
+                    <li>terms and conditions</li>
+                    <li>refund policy</li>
+
+                </ul>
+            </div> 
+            <div class="footer-col-4">
+                <h3>Follow Us On</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">CLASSI-X</p>
+    </div>
+</div>
+<!--..............js for toggle menu.................-->
+<scripts>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px"
+
+        }
+    }
+</scripts>
+
+
+<!-------js for product gllery--------->
+<script>
+    var productImg = document.getElementById("productImg");
+    var smallImg = document.getElementsByClassName("small-img");
+
+    smallImg[0].onclick = function()
+    {
+        productImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick = function()
+    {
+        productImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick = function()
+    {
+        productImg.src = smallImg[2].src;
+    }
+</script>
+</body>
+</html>
